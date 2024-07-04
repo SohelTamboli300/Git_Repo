@@ -4,12 +4,49 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Amazon {
-	public static void  main(String [] args)
+
+	void f1() {
+		// 5*4*3*....
+		int fact = 1, n = 5;
+
+		for (int i = n; i > 0; i--) {
+			fact = fact * i;
+		}
+		System.out.print("factorial is:" + fact);
+	}
+
+	void Reverse() {
+		String rev= "";
+		String arr = "sohel";
+		char ch;
+
+		for (int i = 0; i < arr.length(); i++) {
+			ch = arr.charAt(i);
+			rev = ch+rev;
+		}
+		System.out.print(rev);
+	}
+	
+	void spliteString()
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.amazon.in/gp/homepage.html?_encoding=UTF8&ref_=navm_accountmenu_re_signout&path=%2Fgp%2Fhomepage.html%3F_encoding%3DUTF8%26ref_%3Dnavm_accountmenu_re_signout&useRedirectOnSuccess=1&signIn=1&action=sign-out&ref_=navm_accountmenu_signout&");
-		//this is comment
+		String st1 = "this is to split";
+		String[] sp = st1.split(" ");
+		
+		for(String a: sp)
+		System.out.println(a);
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// WebDriverManager.chromedriver().setup();
+		// WebDriver driver = new ChromeDriver();
+		// driver.get("https://www.amazon.in/"); //this is comment
+		Amazon obj = new Amazon();
+		obj.f1();
+		obj.Reverse();
+		obj.spliteString();
+
 	}
 
 }
