@@ -47,6 +47,7 @@ public class Amazon {
 		obj.Reverse();
 		obj.spliteString();
 		System.out.print("hellow");
+		System.out.print("this change from pro helloJavaGIT");
 	}
 
 }
