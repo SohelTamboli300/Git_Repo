@@ -46,7 +46,7 @@ public class Amazon {
 		obj.f1();
 		obj.Reverse();
 		obj.spliteString();
-
+		System.out.print("hellow");
 	}
 
 }
