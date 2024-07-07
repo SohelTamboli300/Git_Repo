@@ -48,6 +48,7 @@ public class Amazon {
 		obj.spliteString();
 		System.out.print("hellow");
 		System.out.print("this change from pro helloJavaGIT");
+		System.out.print("this change from pro helloJavaGIT");
 	}
 
 }
